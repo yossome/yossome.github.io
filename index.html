@@ -1,203 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="chrome=1">
-        <title id="jesse">Yoseph Wolde-Mariam</title>
+  <head>
+    <title>Yoseph Wolde-Mariam</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      
+    </header>
 
-        <link rel="stylesheet" href="css/style.css"></link>
-        <link rel="stylesheet" href="css/bootstrap.css"></link>
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></link>
-        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"></link>
-        <link rel="stylesheet" href="css/animate.css"></link>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-        <script src="js/scale.fix.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
-        
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('#fullpage').fullpage({
-                    // sectionsColor : ['whitesmoke', 'whitesmoke', 'whitesmoke'],
-                    sectionsColor : ['#eeeeee', '#eeeeee', '#eeeeee'],
-                    anchors       : ['firstPage', 'secondPage', 'thirdPage'],
-                    css3          : true,
-                    scrollOverflow: true,
-                    navigation    : true
-                });
-            });
-        </script>
-
-        <style>
-            #titleanim1
-            {
-                -webkit-animation-duration: 0.5s;
-                animation-duration: 0.5s;
-            }
-            #titleanim2
-            {
-                -webkit-animation-duration: 0.5s;
-                -webkit-animation-delay: 0.25s;
-                animation-duration: 0.5s;
-                animation-delay: 0.25s;
-            }
-        </style>
-    </head>
-
-    <body>
-        <div class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="#firstPage" class="navbar-brand">Home</a>
-                </div>
-
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#secondPage">Résumé</a></li>
-                        <!--
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#thirdPage">Coming Soon!</a></li>
-                            </ul>
-                        </li>
-                        -->
-                        <!--
-                        <li><a href="#thirdPage">Portfolio</a></li>
-                        -->
-                        <li><a href="#thirdPage">About</a></li>
-                    </ul>
-                </div>
-            </div>
+    <section id="banner">
+      <div id="banner_content_wrapper">
+        <div id="intro">
+          <h1>yoseph wolde-mariam</h1>
+          <br/>
+          <h5>i'm an architect.</h5>
         </div>
+      </div>
+    </section>
 
-        <div id="fullpage">
-            <div class="section" id="section1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 animated fadeInUp" id="titleanim1">
-                            <p id="title" style="color:#ffffff;">summary</p>
-                        </div>
-                    </div>
-                    <div style="text-align:center", class="row">
-                        <div class="col-md-12 animated fadeInUp" id="titleanim2">
-                            <p style="color:#ffffff">yoseph wolde-mariam</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+
+        <div class="row">
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/noguchi-west-museum.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
             </div>
+          </div>
 
-            <div class="section">
-                <div class="container">
-                    <!-- resume download button -->
-                    <p id="resumeDownload"><!--<a href="">--><i class="fa fa-download"></i></a></p>
-                    <div class="row">
-                        <div class="col-md-5">
-                            <p id="resumeTitle" style="text-align:right; font-weight:400"><b>Education</b></p>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p><span id="resumeTitle"><i>Cal Poly Poma</i></span><span id="resumeSubtitle">2012 - present</span><span id="resumeSubtitle">5-year B. Arch with minor in Regenerative Studies</span></p>
-                                    <p><span id="resumeTitle"><i>Mt. San Antonio College</i></span><span id="resumeSubtitle">2010-2012</span><span id="resumeSubtitle">General education and some architectural education</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-5">
-                            <p id="resumeTitle" style="text-align:right; font-weight:400"><b>Work Experience</b></p>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <!-- <p><span id="resumeTitle"><b>UC San Diego IR/PS</b></span><span>Unity Developer</span></p> -->
-                                    <p><span id="resumeTitle"><i>Custom Framer at Michaels</i></span><span id="resumeSubtitle">2013</span><span id="resumeSubtitle">Designed, sold, and assembled custom frames for customers</span></p>
-                                    <p><span id="resumeTitle"><i>Lab Assistant at Helica Biosystems, Inc.</i></span><span id="resumeSubtitle">2011, 2014</span><span id="resumeSubtitle">Prepared food safety kits in a team-oriented environment</span></p>
-                                    <p><span id="resumeTitle"><i>Barista at Peet’s Coffee & Tea</i></span><span id="resumeSubtitle">2010</span><span id="resumeSubtitle">Prepared, sold, and served beverages for customers</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-5">
-                            <p id="resumeTitle" style="text-align:right; font-weight:400"><b>Skills</b></p>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p><span id="resumeTitle"><i>Software</i></span><span id="resumeSubtitle">Rhinoceros 5.0, Revit, AutoCAD, Sketchup, V-ray for Rhino, Ecotect, Climate Consultant, Adobe Illustrator, Adobe Photoshop, Adobe InDesign, Microsoft Office</span></p>
-                                    <p><span id="resumeTitle"><i>Model Building</i></span><span id="resumeSubtitle">Museum board, foamcore, chipboard, cardboard, acrylic, plaster, wood, laser cutting, 3-d printing</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-5">
-                            <p id="resumeTitle" style="text-align:right; font-weight:400"><b>Honors</b></p>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p><span id="resumeTitle"><i>Project Selected for Cal Poly Pomona Interim</i></span><span id="resumeTitle">(Winter 2014, Winter 2015)</span><span id="resumeSubtitle">Quarterly exhibit showcasing selected projects from previous quarters</span></p>
-                                    <p><span id="resumeTitle"><i>President’s Honor List, Cal Poly Pomona</i></span><span id="resumeSubtitle">GPA above 3.5 with at least 12 units per quarter for 3 quarters</span></p>
-                                    <p><span id="resumeTitle"><i>Member of Tau Sigma Delta</i></span><span id="resumeTitle">Honor society for architecture students</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                </div>
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/14-homes.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
             </div>
+          </div>
 
-            <div class="section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-8">
-                            <p style="font-size:16px">The following designs are the result of questioning the conventional, critically analyzing program, understanding the nuances of everything that occurs at a site, developing a process specific to each project, considering the human experience, and most importantly pursuing passion and dedication.</p>
-                        </div>
-                        <div class="col-md-2"></div>
-                    </div>
-                </div>
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/mt-baldy-bathhouse.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
             </div>
-            <!--
-            <div style="text-align:center" class="section">
-                Coming Soon!
-                <div class="slide">Coming Soon!</div>
-                <div class="slide">Coming Soon!</div>
-                <div class="slide">Coming Soon!</div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-8">
-                            <div class="portfolio-item">
-                                <a href="http://noguchiarchviz.github.io/" target="_blank"><img class="img-responsive" src="images/noguchi.png" alt=""></a>
-                                <p><b>Noguchi Archviz (Ongoing)</b><br/>An architectural visualization of the Noguchi Museum, designed by Yoseph Wolde-Mariam. Rendered using Unreal Engine 4 with added support for Oculus Rift VR.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2"></div>
-                    </div>
-                </div>
+          </div>
+
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/observation-center.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
             </div>
-            -->
+          </div>
+
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/canterbury-memorial.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/planar-desk.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/project-recycle.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>
+
         </div>
-    </body>
+      </div>
+  </body>
 </html>

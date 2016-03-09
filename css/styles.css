@@ -1,7 +1,25 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
-#banner #intro {
+p {
+  line-height: 150%;
+}
+
+.card {
+  border-radius: 0.5em;
+}
+
+.card .card-image img {
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+.card .card-content {
+  overflow: hidden;
+  height: 13vh;
+}
+
+#banner .intro, #banner .sub_intro {
   text-align: center;
+  color: #333333;
 }
